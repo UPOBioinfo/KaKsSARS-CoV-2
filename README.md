@@ -20,6 +20,9 @@ Extract sequences from a file.
 ####  parsefasta_intoAXT.pl
 Transform alignments files to .axt format.
 
+#### Split_align.pl
+Split a multiple alignment into pairwise alignment (reference sequence vs strain sequence)
+
 ####  Second_step_kaks.pl
 Calculate the KaKs ratio of .axt alignment.
 
@@ -29,7 +32,7 @@ Create the input files for the sliding window analysis. After, use Second_step_k
 ./SlidingWindow.pl align.axt window_size (57) step_size (9)
 
 #### calc_median_step.pl
-Calculate of statistical values
+Calculate of statistical values (set path to splitted results)
 
 ####  percent_mut.pl
 Calculate the number of changes per codon position for ORF+1 (set a specific reference sequence).
