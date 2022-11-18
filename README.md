@@ -6,29 +6,32 @@ In this work we have been able to measure the selective pressure of all the desc
 
 Package: MAFFT v7.305, BLAST v2.9.0+, Statistics::Basic (CPAN), KaKs_Calculator v2.0, SeqKit v0.15
 
-##Scripts:
+## Scripts:
 
-#Initial_Blast.pl
+# Initial_Blast.pl
 Search for the initial sequences in each SARS-CoV-2 strains (set path to genomes). 
 
-#First_step_kaks.pl
-Create the alignments in all frames
+# First_step_kaks.pl
+Create the alignments in all frames.
 
-#parsefasta_intoAXT.pl
-Transform alignments files to .axt format
+# getfasta.pl
+Extract sequences from a file.
 
-#Second_step_kaks.pl
-Calculate the KaKs ratio of .axt alignment
+# parsefasta_intoAXT.pl
+Transform alignments files to .axt format.
 
-#SlidingWindow.pl
-Create the input files for the sliding window analysis. After, use Second_step_kaks.pl script
+# Second_step_kaks.pl
+Calculate the KaKs ratio of .axt alignment.
+
+# SlidingWindow.pl
+Create the input files for the sliding window analysis. After, use Second_step_kaks.pl script.
 
 ./SlidingWindow.pl align.axt window_size (57) step_size (9)
 
 
 
-#percent_mut.pl
-Calculate the number of changes per codon position for ORF+1 (set a specific reference sequence)
+# percent_mut.pl
+Calculate the number of changes per codon position for ORF+1 (set a specific reference sequence).
 
 ./percent_mut.pl align.axt
 
